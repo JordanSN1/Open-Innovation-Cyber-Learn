@@ -45,7 +45,59 @@
                 .pauseFor(5000)
                 .start()
             </script>
+    <img class="LogoEntete" src="../Images/White_log.png" alt="Logo Blanc cyberLearn">
+    <a href="#section-title" class="more">VOIR PLUS <span> ></span></a>
     </nav>
+
+    <section class="section">
+        <h2 class="section-title" id="section-title">Nos Leçons</h2>
+        
+        <div class="card-container">
+            <div class="card">
+                <div class="Etiquette">Code</div>
+                <h3 class="card-title">Leçon 1</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                <a href="Pages/lecons.php" class="card-link">Voir plus</a>
+            </div>
+            <div class="card">
+                <div class="Etiquette">Réseaux</div>
+                <h3 class="card-title">Leçon 2</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                <a href="Pages/lecons.php" class="card-link">Voir plus</a>
+            </div>
+            <div class="card">
+                <div class="Etiquette">Social</div>
+                <h3 class="card-title">Leçon 3</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                <a href="Pages/lecons.php" class="card-link">Voir plus</a>
+            </div>
+        </div>
+
+        <footer>
+        <div class="content-footer">
+                <div class="brand">
+                    <a href="index.php"><img class="brand-logo" src="../Images/Log_pricipal_large.png" alt="Logo Minkey"></a>
+                    <p class="brand-text"> CyberLearn : Maîtrisez la cybersécurité aux côtés des experts.</p>
+        
+                </div>
+                <div class="bloc footer-produits">
+                    <ul class="list-produits">
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">A propos</a></li> 
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="bloc footer-social">
+                    <ul class="list-social">
+                        <li><a href="#"><img src="..\Images\Facebook_F_icon.svg" alt="Facebook"> CyberLearn</a></li>
+                        <li><a href="#"><img src="..\Images\instagram.svg"  id="instagram" alt="Instagram"> @CyberLearn</a></li>
+                        <li><a href="#"><img src="..\Images\x-social-media-round-icon.svg" alt="Twitter">@CyberLearn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="Copyright">&copy; 2024 CyberLearn</p>
+        </footer>
     
 </body>
 </html>
