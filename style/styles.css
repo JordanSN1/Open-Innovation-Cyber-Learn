@@ -24,12 +24,26 @@ body{
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
-    background-color: var(--couleur-quaternaire);
+      background: linear-gradient(135deg, #030219, #0024FF);
+      background-size: 200% 200%;
+      animation: gradientAnimation 10s ease infinite;
     color: var(--couleur-cinquieme);
     overflow-x: hidden;
     transition: background-color 0.15s ease-in-out;
 }
 
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
 
 .navbar {
     background-color: var(--couleur-quaternaire);
@@ -118,7 +132,7 @@ body{
     width: 450px;
     height: 450px;
     right: 80px;
-    top: 120px;
+    top: 140px;
 
 }
 
@@ -414,4 +428,432 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.formInscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    padding: 20px;
+}
+
+.section-inscription {
+    background-color: transparent;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--couleur-principale);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--couleur-quaternaire);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: transparent;
+    color: var(--couleur-cinquieme);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+.sectionInfo {
+
+    margin-bottom: 20px;
+    margin-top: 90px;
+}
+
+.sectionInfo h2 {
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.sectionInfo p {
+    padding: 10px 40px;
+    margin-bottom: 20px;
+}
+
+
+
+.navbar {
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+
+
+.lessons-main {
+    margin-top: 150px;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    height: 76vw;
+    overflow: hidden;
+}
+
+.values-container {
+    text-align: center;
+    padding: 20px;
+    padding-top: 25px;
+    height: 50vw;
+}
+
+.values-container h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-family: sansita, sans-serif;
+}
+
+.values-container p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.card-container-lesson {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    height: 45vw;
+}
+
+.card-lessons {
+    border-radius: 10px;
+    width: 21vw; 
+    height: 30vw;
+    perspective: 1000px;
+    margin: 0.75vw;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 390px;
+    text-align: left;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-lessons:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card-front {
+    background-color: var(--couleur-cinquieme);
+    color: var(--couleur-quaternaire);
+    padding-top: 20px;
+}
+
+.card-front p {
+    font-size: 18px;
+}
+
+.lessons-img {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-color: var(--couleur-quaternaire);
+    margin-bottom: 2.5vw;
+    border-radius: 15px;
+}
+
+.card-front h2 {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    padding: 0;
+}
+
+.card-back img {
+    width: 110%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/* Styles pour le menu hamburger */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.lesson-container {
+    max-width: 900px;
+    margin-top: 150px;
+    margin-left: 20%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.lesson-section {
+    margin-bottom: 30px;
+}
+
+.lesson-section li {
+    color: var(--couleur-quaternaire);
+    margin-bottom: 8px;
+}
+
+.lesson-container h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.lesson-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.quiz-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#quiz-result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.interaction-section {
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 420px) {
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-container.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .LogoEntete{
+        display: none;
+    }
+    .Entete{
+        margin-top: 100px;
+        width: fit-content;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .more{
+        margin-left: 20px;
+        display: flex;
+        position: relative;
+        top: 150px;
+        width: fit-content;
+    }
+
+    .more span {
+        margin-left: 5px;
+    }
+    .section {
+        margin-top: 150px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+
+        /* Footer */
+        footer {
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #007bff;
+        }
+
+        .content-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .brand {
+            margin-bottom: 20px;
+        }
+
+        .brand-logo{
+            margin-left: 110px;
+        }
+
+        .brand-text {
+            font-size: 18px;
+        }
+
+        .footer-produits, .footer-social {
+            margin: 10px 0;
+        }
+
+        .list-produits, .list-social {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .list-produits li, .list-social li {
+            margin: 0;
+        }
+
+        .list-social img {
+            height: 20px;
+            vertical-align: middle;
+        }
+
+        .Copyright {
+            margin: 20px 0 0;
+            font-size: 14px;
+        }
+
+    
 }

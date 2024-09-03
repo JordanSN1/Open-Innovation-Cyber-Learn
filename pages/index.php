@@ -9,7 +9,12 @@
 
 </head>
 <body>
-    <nav class="navbar">
+<nav class="navbar">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <ul class="nav-container">
             <li class="nav-item">
                 <a href="../Pages/index.php" class="nav-link">
@@ -23,7 +28,16 @@
         </ul>
     </nav>
 
-    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navContainer = document.querySelector('.nav-container');
+
+            menuToggle.addEventListener('click', function () {
+                navContainer.classList.toggle('active');
+            });
+        });
+    </script>
 
     <nav class="Accroche">
 
@@ -72,8 +86,9 @@
                 <a href="Pages/lecons.php" class="card-link">Voir plus</a>
             </div>
         </div>
+    </section>
 
-        <footer>
+    <footer>
         <div class="content-footer">
                 <div class="brand">
                     <a href="index.php"><img class="brand-logo" src="../Images/Log_pricipal_large.png" alt="Logo Minkey"></a>
@@ -97,7 +112,7 @@
             </div>
 
             <p class="Copyright">&copy; 2024 CyberLearn</p>
-        </footer>
+    </footer>
     
 </body>
 </html>
