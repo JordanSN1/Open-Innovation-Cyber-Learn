@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberLearn - Home </title>
+    <title>CyberLearn - contact </title>
     <link rel="stylesheet" href="../style/styles.css">
     <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js"></script>
 
@@ -25,55 +25,33 @@
 
     </nav>
 
-    <nav class="Accroche">
 
-
-    <h1 id="entete" class="Entete"></h1>
-            <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js"></script>
-            <script>
-                const txtAnim = document.querySelector('.Entete');
-                new Typewriter(txtAnim, {
-                    loop: true,
-                    deleteSpeed: 10
-                })
-                .changeDelay(40)
-                .typeString('CyberLearn : Votre guide essentiel pour maîtriser la cybersécurité. ')
-                .pauseFor(5000)
-                .deleteChars(55) 
-                .pauseFor(500)
-                .typeString(' Des profisionnels de la cybersécurité à votre service. ')
-                .pauseFor(5000)
-                .start()
-            </script>
-    <img class="LogoEntete" src="../Images/White_log.png" alt="Logo Blanc cyberLearn">
-    <a href="#section-title" class="more">VOIR PLUS <span> ></span></a>
-    </nav>
-
-    <section class="section">
-        <h2 class="section-title" id="section-title">Nos Leçons</h2>
-        
-        <div class="card-container">
-            <div class="card">
-                <div class="Etiquette">Code</div>
-                <h3 class="card-title">Leçon 1</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <a href="Pages/lecons.php" class="card-link">Voir plus</a>
-            </div>
-            <div class="card">
-                <div class="Etiquette">Réseaux</div>
-                <h3 class="card-title">Leçon 2</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <a href="Pages/lecons.php" class="card-link">Voir plus</a>
-            </div>
-            <div class="card">
-                <div class="Etiquette">Social</div>
-                <h3 class="card-title">Leçon 3</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <a href="Pages/lecons.php" class="card-link">Voir plus</a>
-            </div>
+    <div class="form-contact">
+        <div class="image-container">
+        <img class="Img-contact" src="../Images/Log_pricipal_large.png" alt="Image CyberLearn">
         </div>
 
-        <footer>
+        <div class="contact-container">
+            <h1 class="contactH1">Contactez-nous</h1>
+            <form action="submit_form.php" method="post">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Sujet:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
         <div class="content-footer">
                 <div class="brand">
                     <a href="index.php"><img class="brand-logo" src="../Images/Log_pricipal_large.png" alt="Logo Minkey"></a>
@@ -98,6 +76,6 @@
 
             <p class="Copyright">&copy; 2024 CyberLearn</p>
         </footer>
-    
+
 </body>
 </html>

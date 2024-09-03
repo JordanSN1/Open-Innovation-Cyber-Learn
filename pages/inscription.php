@@ -25,55 +25,11 @@
 
     </nav>
 
-    <nav class="Accroche">
-
-
-    <h1 id="entete" class="Entete"></h1>
-            <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js"></script>
-            <script>
-                const txtAnim = document.querySelector('.Entete');
-                new Typewriter(txtAnim, {
-                    loop: true,
-                    deleteSpeed: 10
-                })
-                .changeDelay(40)
-                .typeString('CyberLearn : Votre guide essentiel pour maîtriser la cybersécurité. ')
-                .pauseFor(5000)
-                .deleteChars(55) 
-                .pauseFor(500)
-                .typeString(' Des profisionnels de la cybersécurité à votre service. ')
-                .pauseFor(5000)
-                .start()
-            </script>
-    <img class="LogoEntete" src="../Images/White_log.png" alt="Logo Blanc cyberLearn">
-    <a href="#section-title" class="more">VOIR PLUS <span> ></span></a>
-    </nav>
-
-    <section class="section">
-        <h2 class="section-title" id="section-title">Nos Leçons</h2>
+    <container class="formInscription">
         
-        <div class="card-container">
-            <div class="card">
-                <div class="Etiquette">Code</div>
-                <h3 class="card-title">Leçon 1</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <a href="Pages/lecons.php" class="card-link">Voir plus</a>
-            </div>
-            <div class="card">
-                <div class="Etiquette">Réseaux</div>
-                <h3 class="card-title">Leçon 2</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <a href="Pages/lecons.php" class="card-link">Voir plus</a>
-            </div>
-            <div class="card">
-                <div class="Etiquette">Social</div>
-                <h3 class="card-title">Leçon 3</h3>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                <a href="Pages/lecons.php" class="card-link">Voir plus</a>
-            </div>
-        </div>
+    </container>
 
-        <footer>
+    <footer>
         <div class="content-footer">
                 <div class="brand">
                     <a href="index.php"><img class="brand-logo" src="../Images/Log_pricipal_large.png" alt="Logo Minkey"></a>
@@ -98,6 +54,4 @@
 
             <p class="Copyright">&copy; 2024 CyberLearn</p>
         </footer>
-    
 </body>
-</html>
