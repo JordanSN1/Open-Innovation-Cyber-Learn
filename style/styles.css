@@ -25,3 +25,61 @@ body{
     overflow-x: hidden;
     transition: background-color 0.15s ease-in-out;
 }
+
+
+.navbar {
+    background-color: var(--couleur-quaternaire);
+    padding: 1px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: #0024FF 0px 1px 2px;
+}
+
+.nav-container {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    border-bottom: var(--couleur-cinquieme) 2px solid;
+
+}
+
+.home-image {
+    height: 100%;
+    width: 90px;
+}
+
+.button-inscription {
+    background-color: var(--couleur-secondaire);
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+.button-inscription .nav-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+.button-inscription:hover {
+    background-color: var(--couleur-tertiaire);
+}
+
+.Entete{
+    margin-top: 100px;
+}
